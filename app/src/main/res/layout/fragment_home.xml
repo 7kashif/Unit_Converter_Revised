@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/off_black">
+
+        <TextView
+            android:id="@+id/labelText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:fontFamily="@font/wendy_one"
+            android:padding="10dp"
+            android:text="@string/unit_converter"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent" />
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toTopOf="parent"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent">
+
+          <Button
+              android:id="@+id/timeConverterBtn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:backgroundTint="@color/black"
+              android:textColor="@color/white"
+              android:fontFamily="@font/baloo"
+              android:text="@string/time_converter"
+              android:textSize="18sp"
+              android:textStyle="italic" />
+          <Button
+              android:id="@+id/lengthConverterBtn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/length_converter"
+              android:textColor="@color/white"
+              android:backgroundTint="@color/black"
+              android:fontFamily="@font/baloo"
+              android:textStyle="italic"
+              android:textSize="18sp" />
+          <Button
+              android:id="@+id/tempConverterBtn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/temperature_converter"
+              android:textColor="@color/white"
+              android:backgroundTint="@color/black"
+              android:fontFamily="@font/baloo"
+              android:textStyle="italic"
+              android:textSize="18sp" />
+          <Button
+              android:id="@+id/weightConverterBtn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/weight_converter"
+              android:textColor="@color/white"
+              android:backgroundTint="@color/black"
+              android:fontFamily="@font/baloo"
+              android:textStyle="italic"
+              android:textSize="18sp" />
+      </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

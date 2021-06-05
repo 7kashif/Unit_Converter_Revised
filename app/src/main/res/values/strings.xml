@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Unit Converter Revised</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unit_converter">Unit Converter</string>
+    <string name="time_converter">Time</string>
+    <string name="length_converter">Length</string>
+    <string name="temperature_converter">Temperature</string>
+    <string name="weight_converter">Weight</string>
+    <string name="enter_base_value">Enter Base Value</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+</resources>
