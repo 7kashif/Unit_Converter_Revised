@@ -38,6 +38,8 @@ class ConverterFragment : Fragment(R.layout.fragment_converter),AdapterView.OnIt
             binding.fromSpinner.adapter=arrayAdapter
             binding.toSpinner.adapter=arrayAdapter
         })
+        binding.fromSpinner.onItemSelectedListener=this
+        binding.toSpinner.onItemSelectedListener=this
 
         binding.baseValue.addTextChangedListener(object:TextWatcher{
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) =Unit
@@ -58,7 +60,8 @@ class ConverterFragment : Fragment(R.layout.fragment_converter),AdapterView.OnIt
         val baseUnit=binding.fromSpinner.selectedItem.toString()
         val convertingUnit=binding.toSpinner.selectedItem.toString()
         val baseValue=binding.baseValue.text.toString()
-        viewModel.convertToMinimumValue(baseValue,baseUnit,convertingUnit)
+        if(baseValue.isNotEmpty())
+            viewModel.convertToMinimumValue(baseValue,baseUnit,convertingUnit)
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) =Unit
